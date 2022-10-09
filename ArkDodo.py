@@ -96,9 +96,9 @@ def isInside_point1(x):
     To find if given point lies inside a given interval or not.
     """
     if x > 3:
-        print("Inside")
+        print("Inside.")
     else:
-        print("Not inside")
+        print("Outside.")
 
 
 def isInside_point2(x):
@@ -110,9 +110,9 @@ def isInside_point2(x):
         if x == 9:
             print("On edge.")
         else:
-            print("Inside")
+            print("Inside.")
     else:
-        print("Not inside")
+        print("Outside.")
 
 
 def isInside_point3(x):
@@ -124,9 +124,9 @@ def isInside_point3(x):
         if x == -4:
             print("On edge.")
         else:
-            print("Inside")
+            print("Inside.")
     else:
-        print("Not inside")
+        print("Outside.")
 
 
 # Driver Code
