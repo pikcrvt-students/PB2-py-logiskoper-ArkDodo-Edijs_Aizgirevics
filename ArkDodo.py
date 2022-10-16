@@ -13,7 +13,7 @@ def isInside_rec1(x, y):
         if x == -1 or x == 3 or y == -2 or y == 1:
             print("On edge.")
         else:
-            print("Inside")
+            print("Inside.")
     else:
         print("Outside.")
 
@@ -56,9 +56,9 @@ def isInside_cir(x, y):
         if (x ** 2 + y ** 2) ** 0.5 == 1:
             print("On edge.")
         else:
-            print("Inside")
+            print("Inside.")
     else:
-        print("Outside")
+        print("Outside.")
 
 
 def isInside_cut_cir(x, y):
@@ -70,9 +70,9 @@ def isInside_cut_cir(x, y):
         if ((-2 - x) ** 2 + (2 - y) ** 2) ** 0.5 == 1 or y == x + 5 and ((-2 - x) ** 2 + (2 - y) ** 2) ** 0.5 < 1:
             print("On edge.")
         else:
-            print("Inside")
+            print("Inside.")
     else:
-        print("Outside")
+        print("Outside.")
 
 
 def isInside_trap(x, y):
@@ -92,18 +92,16 @@ def isInside_trap(x, y):
 
 def isInside_point1(x):
     """Function.
-
     To find if given point lies inside a given interval or not.
     """
     if x > 3:
-        print("Inside")
+        print("Inside.")
     else:
         print("Outside.")
 
 
 def isInside_point2(x):
     """Function.
-
     To find if given point lies inside a given interval or not.
     """
     if x <= 9:
@@ -117,7 +115,6 @@ def isInside_point2(x):
 
 def isInside_point3(x):
     """Function.
-
     To find if given point lies inside a given interval or not.
     """
     if -4 <= x < 2:
