@@ -18,7 +18,7 @@ def isInside_rec1(x, y):
     >>> isInside_rec1(-6, 6)
     Outside.
     """
-    if -1 <= x or x <= 3 and -2 <= y or y <= 1:
+    if -1 <= x <= 3 or -2 <= y <= 1:
         if x == -1 or x == 3 or y == -2 or y == 1:
             print("On edge.")
         else:
@@ -40,7 +40,7 @@ def isInside_rec2(x, y):
     >>> isInside_rec2(-10, -10)
     Outside.
     """
-    if -5 <= x or x <= 2 and -1 <= y or y <= 3:
+    if -5 <= x <= 2 or -1 <= y <= 3:
         if x == -5 or x == 2 or y == 1 or y == 3:
             print("On edge.")
         else:
@@ -62,7 +62,7 @@ def isInside_tri(x, y):
     >>> isInside_tri(-20, 20)
     Outside.
     """
-    if 0 <= x or x <= 2 and 0 <= y or y <= -1.5 * x + 3:
+    if 0 <= x <= 2 or 0 <= y <= -1.5 * x + 3:
         if x == 0 or y == 0 or y == -1.5 * x + 3:
             print("On edge.")
         else:
@@ -128,7 +128,7 @@ def isInside_trap(x, y):
     >>> isInside_trap(-20, 20)
     Outside.
     """
-    if 0 <= x or x <= -3 and -2.5 >= y or y >= 2 / 3 * x + 2:
+    if 0 <= x <= -3 or -2.5 >= y >= 2 / 3 * x + 2:
         if x == 0 or x == -3 or y == -2.5 or y == 2 / 3 * x + 2:
             print("On edge.")
         else:
@@ -249,4 +249,4 @@ if tipe == 2:
     if task == 3:
         isInside_point3(x)
 
-__version__ = 1
+__version__ = 1.1
