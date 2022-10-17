@@ -9,11 +9,11 @@ def isInside_rec1(x, y):
     to find if given point lies inside a given rectangle or on edge or not.
     Figure coordinates: (-1; 1); (3; 1); (3; -2); (-1; -2)!
     """
-    if -1 <= x or x <= 3 and -2 <= y or y <= 1:
+    if -1 <= x <= 3 or -2 <= y <= 1:
         if x == -1 or x == 3 or y == -2 or y == 1:
             print("On edge.")
         else:
-            print("Inside.")
+            print("Inside")
     else:
         print("Outside.")
 
@@ -23,7 +23,7 @@ def isInside_rec2(x, y):
     to find if given point lies inside a given rectangle or on edge or not.
     Figure coordinates: (-5; 3); (2; 3); (2; -1); (-5; -1)!
     """
-    if -5 <= x or x <= 2 and -1 <= y or y <= 3:
+    if -5 <= x <= 2 or -1 <= y <= 3:
         if x == -5 or x == 2 or y == 1 or y == 3:
             print("On edge.")
         else:
@@ -38,7 +38,7 @@ def isInside_tri(x, y):
     Figure coordinates: (0; 3); (0; 0); (2; 0)!
     Hypotenuse of the triangle: y = -1.5 * x + 3
     """
-    if 0 <= x or x <= 2 and 0 <= y or y <= -1.5 * x + 3:
+    if 0 <= x <= 2 or 0 <= y <= -1.5 * x + 3:
         if x == 0 or y == 0 or y == -1.5 * x + 3:
             print("On edge.")
         else:
@@ -56,9 +56,9 @@ def isInside_cir(x, y):
         if (x ** 2 + y ** 2) ** 0.5 == 1:
             print("On edge.")
         else:
-            print("Inside.")
+            print("Inside")
     else:
-        print("Outside.")
+        print("Outside")
 
 
 def isInside_cut_cir(x, y):
@@ -70,9 +70,9 @@ def isInside_cut_cir(x, y):
         if ((-2 - x) ** 2 + (2 - y) ** 2) ** 0.5 == 1 or y == x + 5 and ((-2 - x) ** 2 + (2 - y) ** 2) ** 0.5 < 1:
             print("On edge.")
         else:
-            print("Inside.")
+            print("Inside")
     else:
-        print("Outside.")
+        print("Outside")
 
 
 def isInside_trap(x, y):
@@ -81,7 +81,7 @@ def isInside_trap(x, y):
     Figure coordinates: (0, 2); (0, -2,5); (-3, -2,5); (-3, 0);
     with cut side y = 2 / 3 * x + 2
     """
-    if 0 <= x or x <= -3 and -2.5 >= y or y >= 2 / 3 * x + 2:
+    if 0 <= x <= -3 or -2.5 >= y >= 2 / 3 * x + 2:
         if x == 0 or x == -3 or y == -2.5 or y == 2 / 3 * x + 2:
             print("On edge.")
         else:
@@ -92,16 +92,18 @@ def isInside_trap(x, y):
 
 def isInside_point1(x):
     """Function.
+
     To find if given point lies inside a given interval or not.
     """
     if x > 3:
-        print("Inside.")
+        print("Inside")
     else:
         print("Outside.")
 
 
 def isInside_point2(x):
     """Function.
+
     To find if given point lies inside a given interval or not.
     """
     if x <= 9:
@@ -115,6 +117,7 @@ def isInside_point2(x):
 
 def isInside_point3(x):
     """Function.
+
     To find if given point lies inside a given interval or not.
     """
     if -4 <= x < 2:
@@ -177,4 +180,4 @@ if tipe == 2:
     if task == 3:
         isInside_point3(x)
 
-__version__ = 1
+__version__ = 1.1
